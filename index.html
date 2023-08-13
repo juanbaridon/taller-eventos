@@ -7,7 +7,9 @@
 </head>
 <body>
     <div id="divBoton" style="padding: 5px; background-color: green;">
-        <button onclick="alert('Hola!')">Saludar</button>
+        <button onclick="alert('Hola!'); event.stopPropagation()" >Saludar</button> 
+        <!--Sería mas recomendable pasar esto a evento.js y realizarlo con un addEventListener,
+            pero me limité a realizar lo que pedía el ejercicio ya que antes pedía hacerlo como atributo-->
     </div>
         <script src="evento.js"></script>
 </body>
